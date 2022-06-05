@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.26ca58b0.css",
+    "main.js": "/static/js/main.af58e1e1.js",
+    "static/js/845.5a8c12dd.chunk.js": "/static/js/845.5a8c12dd.chunk.js",
+    "static/media/firstquestions.mp3": "/static/media/firstquestions.a7347c569d0cf31cd77e.mp3",
+    "static/media/waiting1.mp3": "/static/media/waiting1.30e329da76ae665702f7.mp3",
+    "static/media/waiting2.mp3": "/static/media/waiting2.348c5fdbb08b33bf7866.mp3",
+    "static/media/main.mp3": "/static/media/main.6060b999db760597adb4.mp3",
+    "static/media/final-answer.mp3": "/static/media/final-answer.bcf988e151abedc08e2d.mp3",
+    "static/media/victory.mp3": "/static/media/victory.562faab9beb960f41cc8.mp3",
+    "static/media/image6.jpg": "/static/media/image6.997dd209ce6478c6d172.jpg",
+    "static/media/image4.jpg": "/static/media/image4.c137ccd722d64133b4df.jpg",
+    "static/media/break.mp3": "/static/media/break.02df4387bfde6190a7cf.mp3",
+    "static/media/play.mp3": "/static/media/play.8e5f6d1d81d4e1414b95.mp3",
+    "static/media/correct.mp3": "/static/media/correct.160572d72c858155072e.mp3",
+    "static/media/image3.jpg": "/static/media/image3.5b812df4649ac12195c0.jpg",
+    "static/media/wrong.mp3": "/static/media/wrong.e946821894ae9b0a0d6f.mp3",
+    "static/media/image7.webp": "/static/media/image7.330e18bfe91a48ffd43a.webp",
+    "static/media/image5.jpg": "/static/media/image5.7fe66cc13ea7207f20ae.jpg",
+    "static/media/image1.jpg": "/static/media/image1.e0626bb5e3089d3b35c9.jpg",
+    "static/media/image2.jpg": "/static/media/image2.35b5756020dc2a1cf160.jpg",
+    "index.html": "/index.html",
+    "main.26ca58b0.css.map": "/static/css/main.26ca58b0.css.map",
+    "main.af58e1e1.js.map": "/static/js/main.af58e1e1.js.map",
+    "845.5a8c12dd.chunk.js.map": "/static/js/845.5a8c12dd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26ca58b0.css",
+    "static/js/main.af58e1e1.js"
+  ]
+}
