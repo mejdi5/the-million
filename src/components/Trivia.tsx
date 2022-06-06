@@ -5,10 +5,6 @@ import { Question } from './Constants'
 import { FormEvent } from 'react';
 import useSound from "use-sound";
 import {
-    firstPercentage, 
-    secondPerentage, 
-    thirdPercentage, 
-    fourthPercentage, 
     maxPercentage,
     firstNonMaxPercentage,
     secondNonMaxPercentage,
@@ -52,11 +48,12 @@ const [usedPublicHelp, setUsedPublicHelp] = useState(localStorage.getItem("usedP
 const [usedFriendHelp, setUsedFriendHelp] = useState(localStorage.getItem("usedFriendHelp") === "true" ? true : false)
 const [sound, setSound] = useState<any>('');
 
-const [play, {stop}] = useSound(sound, {interrupt: true});
+const [play, {stop}] = useSound(sound);
 const [Play] = useSound(playSound);
 const [Break] = useSound(breakSound);  
 const [Correct] = useSound(correct);
 const [Wrong] = useSound(wrong);
+const [FinalAnswerSound] = useSound(finalAnswerSound);
 const [Victory] = useSound(victory);
 
 //submit answer
@@ -64,10 +61,7 @@ const handleSubmit = (Answer: string, e: FormEvent) => {
     e.preventDefault();
     setSelectedAnswer(Answer);
     localStorage.setItem('selectedAnswer', Answer);
-    if (questionNumber > 5 ) {
-        setSound(finalAnswerSound); 
-        play()
-    }
+    questionNumber > 5 && FinalAnswerSound();
 }
 
 //remove two incorrect answers
@@ -161,21 +155,19 @@ useEffect(() => {
             setSound(firstQuestionsSound) 
             play()
     }
-    else if(questionNumber > 5 && questionNumber < 11  && !gameOver && !selectedAnswer) { 
-            stop()
+    else if(questionNumber > 5 && questionNumber < 11  && !selectedAnswer && !gameOver) { 
             setSound(middleQuestionsSound); 
             play()
     }
-    else if(questionNumber > 10 && questionNumber < 16  && !gameOver) {
-            stop()
+    else if(questionNumber > 10 && questionNumber < 16  && !selectedAnswer && !gameOver) {
             setSound(lastQuestionsSound); 
             play()
     } 
     else {
-            setSound('')
-            stop()
+        setSound('')
+        stop() 
     }
-}, [questionNumber, selectedAnswer, gameOver, sound, play])
+}, [questionNumber, gameOver, sound])
 
 
 useEffect(() => {
